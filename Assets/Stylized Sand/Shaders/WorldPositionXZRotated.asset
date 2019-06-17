@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: WorldPositionXZRotated
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity Asset
+    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=16700\n202;73;1322;653;954;215.5;1;True;False\nNode;AmplifyShaderEditor.TauNode;2;-484.8669,154.6978;Float;False;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;3;-367.959,103.8673;Float;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;6;-567,77.5;Float;False;Rotation
+    (0-1);1;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;5;-590,-3.5;Float;False;Scale;1;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionNode;1;-459,2.5;Float;False;WorldPositionXZ;-1;;1;409d61e1d315a484388d8ae966642b06;0;1;1;FLOAT;1;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.RotatorNode;4;-191.175,30.93485;Float;False;3;0;FLOAT2;0,0;False;1;FLOAT2;0.5,0.5;False;2;FLOAT;1;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;0;8,31;Float;False;True;World
+    Position;0;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nWireConnection;3;0;6;0\nWireConnection;3;1;2;0\nWireConnection;1;1;5;0\nWireConnection;4;0;1;0\nWireConnection;4;2;3;0\nWireConnection;0;0;4;0\nASEEND*/\n//CHKSM=2215519D459BAA79A83D4B1EAAA8E55BA44BE4DF"
+  m_functionName: 
+  m_description: 
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 11
+  m_customNodeCategory: 
+  m_previewPosition: 0
+  m_hidden: 0

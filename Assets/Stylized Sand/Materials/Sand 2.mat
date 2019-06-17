@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sand 2
+  m_Shader: {fileID: 4800000, guid: fe327b2ce4c5644a695c9153a423e69f, type: 3}
+  m_ShaderKeywords: _KEYWORD0_LAMBERT _MODULATESTRENGTHBYDISTANCE_ON _SUNSPECBOTH_BOTH
+    _SUNSPECINSHADOW_ON _SUNSPECULARSOURCE_SANDNORMAL _USEDISTANCEMASK_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _GlitterNormal:
+        m_Texture: {fileID: 2800000, guid: 25017c2a37a55413b8d64e98b26c1888, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTexture:
+        m_Texture: {fileID: 2800000, guid: 8437be7492c0f4361a083737d08834bb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise:
+        m_Texture: {fileID: 2800000, guid: 25017c2a37a55413b8d64e98b26c1888, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SandNormal:
+        m_Texture: {fileID: 2800000, guid: 16417740d97f4324c94972a909c5a3fe, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SandNormals:
+        m_Texture: {fileID: 2800000, guid: 8437be7492c0f4361a083737d08834bb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 2800000, guid: 25017c2a37a55413b8d64e98b26c1888, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample1:
+        m_Texture: {fileID: 2800000, guid: 70065e7549d6144a3b4a089b19ebcc23, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample2:
+        m_Texture: {fileID: 2800000, guid: e28dc97a9541e3642a48c0e3886688c5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample3:
+        m_Texture: {fileID: 2800000, guid: 36be8d528a4fa024faa4680d7658642c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _X:
+        m_Texture: {fileID: 2800000, guid: 6990d5664e9b2421bbda7b76ab0c19bd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Y:
+        m_Texture: {fileID: 2800000, guid: 6990d5664e9b2421bbda7b76ab0c19bd, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Z:
+        m_Texture: {fileID: 2800000, guid: 84dfa79c162dd4b7b98edf9ce3fdd6d1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _CameraAffectsGlitterPosition: 0.001
+    - _CameraContribution: 0.005
+    - _CameraSparkleContribution: 0.001
+    - _Cell: 0
+    - _CellStrength: 0
+    - _DistanceOffset: 150
+    - _DistanceStrength: 150
+    - _Float0: 1
+    - _Float1: 0.001
+    - _Float2: 10
+    - _GlitterNormalScale: 20
+    - _GlitterScale: 20
+    - _GlitterSpecularExponent: 500
+    - _GlitterinShadows: 0
+    - _Keyword0: 0
+    - _LambertModify: 1
+    - _Lambertian: 1
+    - _MainTextureScale: 50
+    - _ModifiedLambertStength: 0.45
+    - _ModulateStrengthByDistance: 1
+    - _Mult: 500000
+    - _NoiseBlend: 0.794
+    - _NoiseScale: 20
+    - _NoiseSpecularExponent: 750
+    - _NormalScale: 1.25
+    - _NormalStrength: 1
+    - _Posterize: 256
+    - _SandNormalRotation: 0.287
+    - _SandNormalScale: 20
+    - _SandNormalStrength: 0.5
+    - _Scale: 0.3
+    - _SelfIllumination: 1
+    - _SelfIlluminationIncludesSpecular: 0
+    - _Size: 0.06
+    - _SubtractiveShadows: 0
+    - _SunSpecInShadow: 1
+    - _SunSpecularExponent: 5000
+    - _SunSpecularGraininess: 0.15
+    - _SunSpecularSource: 0
+    - _TextureScale: 1
+    - _UseDistanceMask: 1
+    - __dirty: 0
+    - _ampl: 1
+    - _amplitude: 0.52
+    - _camdistancemask: 100
+    - _contr: 0.556
+    - _distancemaskadd: 200
+    - _distancemaskaddstart: 300
+    - _distancemaskmult: 0.01
+    - _distancemaskmultsoftness: 100
+    - _exp: 1000
+    - _gamma: 1
+    - _noisesize: 0.35
+    - _normalstrength: 0
+    - _offset: 1
+    - _pow: 2.46
+    - _power: 500
+    - _rho: 1
+    - _rot: 0
+    - _scale: 1
+    - _scale2: 1
+    - _strength: 1
+    - _sunspecboth: 2
+    - _wavelength: 0.05
+    m_Colors:
+    - _Color: {r: 0.9622642, g: 0.8318471, b: 0.73985404, a: 1}
+    - _Lit: {r: 0.8679245, g: 0.7502538, b: 0.63456744, a: 0}
+    - _Shadow: {r: 0.7169812, g: 0.35735273, b: 0.23335709, a: 0}
+    - _Vector0: {r: 1, g: 1, b: 1, a: 0}
+    - _Vector1: {r: 1.5, g: 0.5, b: 0, a: 0}
+    - _shadowcolor: {r: 0.764151, g: 0.65988404, b: 0.5803222, a: 0}
