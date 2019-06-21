@@ -6,18 +6,11 @@
 ![4](https://imgur.com/lzqOfGp.png)
 ![5](https://imgur.com/RxHr5Sj.png)
 
-## Features
+## To Install
 
-![features](https://imgur.com/qBMXmID.png)
+Download the [.unitypackage](https://drive.google.com/open?id=1Lc6xgKN8GqlIeGeB0WAsAycON4rkA2Eg), or clone this repository.
 
-WIP
-WIP
-WIP
-
-## Install
-Download the [.unitypackage](https://drive.google.com/open?id=1Lc6xgKN8GqlIeGeB0WAsAycON4rkA2Eg) and import it to an existing Unity project, or clone this repository.
-
-## Setup
+## To Use
 
 Import the `.unitypackage` into your project.
 
@@ -31,4 +24,8 @@ Import the `.unitypackage` into your project.
 2. Click on the terrain object in the scene view.
 3. In the terrain object's inspector, select the settings tab (gear icon).
 4. Select the `Material` dropdown and change the value from "Built in Standard" to "Custom".
-5. Drag one of the material presets in `Stylized Sand/Materials` onto the custom material slot.
+5. Drag one of the material presets in `Stylized Sand/Materials` into the custom material slot.
+
+## Options
+
+![options](https://imgur.com/qBMXmID.png)
