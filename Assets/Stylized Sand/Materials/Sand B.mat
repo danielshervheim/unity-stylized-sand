@@ -7,10 +7,10 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sand
-  m_Shader: {fileID: 4800000, guid: fe327b2ce4c5644a695c9153a423e69f, type: 3}
-  m_ShaderKeywords: _KEYWORD0_LAMBERT _MODULATESTRENGTHBYDISTANCE_ON _SUNSPECBOTH_BOTH
-    _SUNSPECINSHADOW_ON _SUNSPECULARSOURCE_SANDNORMAL _USEDISTANCEMASK_ON
+  m_Name: Sand B
+  m_Shader: {fileID: 4800000, guid: 716c15a732bdc4bc68fb7203d5c33fc4, type: 3}
+  m_ShaderKeywords: _APPLYFOG_ON _KEYWORD0_LAMBERT _MODULATESTRENGTHBYDISTANCE_ON
+    _SUNSPECBOTH_BOTH _SUNSPECINSHADOW_ON _SUNSPECULARSOURCE_SANDNORMAL _USEDISTANCEMASK_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20,8 +20,16 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _DunesNormalMap:
+        m_Texture: {fileID: 2800000, guid: 447a802955e4944e8a28b70f8cf875a7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _GlitterNormal:
-        m_Texture: {fileID: 2800000, guid: 70065e7549d6144a3b4a089b19ebcc23, type: 3}
+        m_Texture: {fileID: 2800000, guid: 25017c2a37a55413b8d64e98b26c1888, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GlitterNormalMap:
+        m_Texture: {fileID: 2800000, guid: 25017c2a37a55413b8d64e98b26c1888, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTexture:
@@ -33,7 +41,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SandNormal:
-        m_Texture: {fileID: 2800000, guid: 8437be7492c0f4361a083737d08834bb, type: 3}
+        m_Texture: {fileID: 2800000, guid: 447a802955e4944e8a28b70f8cf875a7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SandNormals:
@@ -77,26 +85,32 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _ApplyFog: 1
     - _CameraAffectsGlitterPosition: 0.001
-    - _CameraContribution: 0.001
+    - _CameraContribution: 0.005
     - _CameraSparkleContribution: 0.001
     - _Cell: 0
     - _CellStrength: 0
-    - _DistanceOffset: 200
-    - _DistanceStrength: 75
+    - _DistanceOffset: 100
+    - _DistanceStrength: 100
+    - _DunesScale: 50
+    - _DunesStrength: 0.75
     - _Float0: 1
     - _Float1: 0.001
     - _Float2: 10
     - _GlitterNormalScale: 15
-    - _GlitterScale: 20
-    - _GlitterSpecularExponent: 100
-    - _GlitterStrength: 20
+    - _GlitterScale: 15
+    - _GlitterSpecExp: 1000
+    - _GlitterSpecGraininess: 1
+    - _GlitterSpecInShadows: 0
+    - _GlitterSpecularExponent: 1000
     - _GlitterinShadows: 0
     - _Keyword0: 0
     - _LambertModify: 1
     - _Lambertian: 1
     - _MainTextureScale: 50
-    - _ModifiedLambertStength: 0.25
+    - _ModifiedLambertStength: 0.4
+    - _ModifiedLambertStrength: 0.4
     - _ModulateStrengthByDistance: 1
     - _Mult: 500000
     - _NoiseBlend: 0.794
@@ -105,17 +119,20 @@ Material:
     - _NormalScale: 1.25
     - _NormalStrength: 1
     - _Posterize: 256
-    - _SandNormalRotation: 0.685
-    - _SandNormalScale: 20
-    - _SandNormalStrength: 1
+    - _SandNormalRotation: 0.5
+    - _SandNormalScale: 50
+    - _SandNormalStrength: 0.75
     - _Scale: 0.3
     - _SelfIllumination: 1
     - _SelfIlluminationIncludesSpecular: 0
     - _Size: 0.06
     - _SubtractiveShadows: 0
+    - _SunSpecExp: 1000
+    - _SunSpecGraininess: 0.5
     - _SunSpecInShadow: 1
-    - _SunSpecularExponent: 250
-    - _SunSpecularGraininess: 0.4
+    - _SunSpecInShadows: 0
+    - _SunSpecularExponent: 1000
+    - _SunSpecularGraininess: 0.5
     - _SunSpecularSource: 0
     - _TextureScale: 1
     - _UseDistanceMask: 1
@@ -144,8 +161,10 @@ Material:
     - _wavelength: 0.05
     m_Colors:
     - _Color: {r: 0.9622642, g: 0.8318471, b: 0.73985404, a: 1}
-    - _Lit: {r: 0.9339623, g: 0.8018943, b: 0.7445265, a: 0}
-    - _Shadow: {r: 0.8867924, g: 0.5717139, b: 0.40574938, a: 0}
+    - _Lit: {r: 0.8867924, g: 0.8528969, b: 0.6901922, a: 0}
+    - _LitColor: {r: 0.8862745, g: 0.8509804, b: 0.6901961, a: 1}
+    - _ShadedColor: {r: 0.8, g: 0.4117647, b: 0.29803923, a: 1}
+    - _Shadow: {r: 0.8, g: 0.413001, b: 0.29803926, a: 0}
     - _Vector0: {r: 1, g: 1, b: 1, a: 0}
     - _Vector1: {r: 1.5, g: 0.5, b: 0, a: 0}
     - _shadowcolor: {r: 0.764151, g: 0.65988404, b: 0.5803222, a: 0}

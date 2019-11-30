@@ -7,10 +7,10 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sand 2
-  m_Shader: {fileID: 4800000, guid: fe327b2ce4c5644a695c9153a423e69f, type: 3}
-  m_ShaderKeywords: _KEYWORD0_LAMBERT _MODULATESTRENGTHBYDISTANCE_ON _SUNSPECBOTH_BOTH
-    _SUNSPECINSHADOW_ON _SUNSPECULARSOURCE_SANDNORMAL _USEDISTANCEMASK_ON
+  m_Name: Sand C
+  m_Shader: {fileID: 4800000, guid: 716c15a732bdc4bc68fb7203d5c33fc4, type: 3}
+  m_ShaderKeywords: _APPLYFOG_ON _KEYWORD0_LAMBERT _MODULATESTRENGTHBYDISTANCE_ON
+    _SUNSPECBOTH_BOTH _SUNSPECINSHADOW_ON _SUNSPECULARSOURCE_SANDNORMAL _USEDISTANCEMASK_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -20,7 +20,15 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _DunesNormalMap:
+        m_Texture: {fileID: 2800000, guid: 16417740d97f4324c94972a909c5a3fe, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _GlitterNormal:
+        m_Texture: {fileID: 2800000, guid: 25017c2a37a55413b8d64e98b26c1888, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GlitterNormalMap:
         m_Texture: {fileID: 2800000, guid: 25017c2a37a55413b8d64e98b26c1888, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -77,6 +85,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _ApplyFog: 1
     - _CameraAffectsGlitterPosition: 0.001
     - _CameraContribution: 0.005
     - _CameraSparkleContribution: 0.001
@@ -84,11 +93,16 @@ Material:
     - _CellStrength: 0
     - _DistanceOffset: 150
     - _DistanceStrength: 150
+    - _DunesScale: 20
+    - _DunesStrength: 0.5
     - _Float0: 1
     - _Float1: 0.001
     - _Float2: 10
     - _GlitterNormalScale: 20
     - _GlitterScale: 20
+    - _GlitterSpecExp: 500
+    - _GlitterSpecGraininess: 1
+    - _GlitterSpecInShadows: 0
     - _GlitterSpecularExponent: 500
     - _GlitterinShadows: 0
     - _Keyword0: 0
@@ -96,6 +110,7 @@ Material:
     - _Lambertian: 1
     - _MainTextureScale: 50
     - _ModifiedLambertStength: 0.45
+    - _ModifiedLambertStrength: 0.45
     - _ModulateStrengthByDistance: 1
     - _Mult: 500000
     - _NoiseBlend: 0.794
@@ -112,7 +127,10 @@ Material:
     - _SelfIlluminationIncludesSpecular: 0
     - _Size: 0.06
     - _SubtractiveShadows: 0
+    - _SunSpecExp: 5000
+    - _SunSpecGraininess: 0.15
     - _SunSpecInShadow: 1
+    - _SunSpecInShadows: 0
     - _SunSpecularExponent: 5000
     - _SunSpecularGraininess: 0.15
     - _SunSpecularSource: 0
@@ -144,6 +162,8 @@ Material:
     m_Colors:
     - _Color: {r: 0.9622642, g: 0.8318471, b: 0.73985404, a: 1}
     - _Lit: {r: 0.8679245, g: 0.7502538, b: 0.63456744, a: 0}
+    - _LitColor: {r: 0.8666667, g: 0.7490196, b: 0.63529414, a: 1}
+    - _ShadedColor: {r: 0.7176471, g: 0.35686275, b: 0.23529412, a: 1}
     - _Shadow: {r: 0.7169812, g: 0.35735273, b: 0.23335709, a: 0}
     - _Vector0: {r: 1, g: 1, b: 1, a: 0}
     - _Vector1: {r: 1.5, g: 0.5, b: 0, a: 0}

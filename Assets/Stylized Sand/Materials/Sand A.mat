@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sand A
+  m_Shader: {fileID: 4800000, guid: 716c15a732bdc4bc68fb7203d5c33fc4, type: 3}
+  m_ShaderKeywords: _APPLYFOG_ON _SPECULARINSHADOWS_ON
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _DunesNormalMap:
+        m_Texture: {fileID: 2800000, guid: 8437be7492c0f4361a083737d08834bb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _GlitterNormalMap:
+        m_Texture: {fileID: 2800000, guid: 25017c2a37a55413b8d64e98b26c1888, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ApplyFog: 1
+    - _CameraContribution: 0.001
+    - _DunesScale: 10
+    - _DunesStrength: 0.96
+    - _GlitterScale: 15
+    - _GlitterSpecExp: 50
+    - _GlitterSpecGraininess: 1
+    - _GlitterSpecInShadows: 0
+    - _GlitterSpecStrength: 1
+    - _ModifiedLambertStrength: 0.25
+    - _SpecularInShadows: 1
+    - _SunSpecExp: 250
+    - _SunSpecGraininess: 0.4
+    - _SunSpecInShadows: 0
+    - _SunSpecStrength: 0.4
+    m_Colors:
+    - _LitColor: {r: 0.9339623, g: 0.8018943, b: 0.7445265, a: 1}
+    - _ShadedColor: {r: 0.8867924, g: 0.5717139, b: 0.4057494, a: 1}

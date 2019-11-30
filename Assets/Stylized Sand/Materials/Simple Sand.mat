@@ -8,9 +8,9 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Simple Sand
-  m_Shader: {fileID: 4800000, guid: 70639cbda7d99a04bab41d01ab3800c2, type: 3}
-  m_ShaderKeywords: _KEYWORD0_LAMBERT _MODULATESTRENGTHBYDISTANCE_ON _SUNSPECBOTH_BOTH
-    _SUNSPECINSHADOW_ON _SUNSPECULARSOURCE_SANDNORMAL _USEDISTANCEMASK_ON
+  m_Shader: {fileID: 4800000, guid: 263d22f20c46e40fabc3f0c67c542fdd, type: 3}
+  m_ShaderKeywords: _KEYWORD0_LAMBERT _MODULATESTRENGTHBYDISTANCE_ON _RECEIVESHADOWS_ON
+    _SUNSPECBOTH_BOTH _SUNSPECINSHADOW_ON _SUNSPECULARSOURCE_SANDNORMAL _USEDISTANCEMASK_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -77,6 +77,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - _ApplyFog: 0
     - _CameraAffectsGlitterPosition: 0.001
     - _CameraContribution: 0.005
     - _CameraSparkleContribution: 0.001
@@ -106,12 +107,14 @@ Material:
     - _NormalScale: 1.25
     - _NormalStrength: 1
     - _Posterize: 256
+    - _ReceiveShadows: 1
     - _SandNormalRotation: 0.287
     - _SandNormalScale: 20
     - _SandNormalStrength: 0.5
     - _Scale: 175
     - _SelfIllumination: 1
     - _SelfIlluminationIncludesSpecular: 0
+    - _ShadowStrength: 0.15
     - _Size: 0.06
     - _SubtractiveShadows: 0
     - _SunSpecInShadow: 1
