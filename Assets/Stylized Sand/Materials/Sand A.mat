@@ -31,7 +31,7 @@ Material:
     - _ApplyFog: 1
     - _CameraContribution: 0.001
     - _DunesScale: 10
-    - _DunesStrength: 0.96
+    - _DunesStrength: 1
     - _GlitterScale: 15
     - _GlitterSpecExp: 50
     - _GlitterSpecGraininess: 1

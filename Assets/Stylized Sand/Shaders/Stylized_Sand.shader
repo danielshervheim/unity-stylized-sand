@@ -92,17 +92,21 @@
                 return o;
             }
 
-            // Returns the vector v reflected by the normal vector.
-            float3 reflect(float3 v, float3 normal)
+            float3x3 constructTangentToWorldMatrix(v2f i)
             {
-                return v - 2*dot(v, normal) * normal;
+                // Construct the TBN matrix.
+                float3x3 worldToTangent = float3x3(i.worldTangent, normalize(cross(i.worldNormal, i.worldTangent)), i.worldNormal);
+
+                // The TBN matrix forms an orthonormal basis, so the inverse is the transpose.
+                float3x3 tangentToWorld = transpose(worldToTangent);
+                return tangentToWorld;
             }
 
             float4 frag (v2f i) : SV_Target
             {
                 // Construct tangent-to-world matrix.
-                float3x3 tangentToWorld = transpose(float3x3(i.worldTangent, normalize(cross(i.worldNormal, i.worldTangent)), i.worldNormal));
-
+                float3x3 tangentToWorld = constructTangentToWorldMatrix(i);  // transpose(float3x3(i.worldTangent, normalize(cross(i.worldNormal, i.worldTangent)), i.worldNormal));
+                
                 // Unpack the dune normal map texture and scale it based on the strength.
                 float3 duneNormalTS = UnpackNormal(tex2D(_DunesNormalMap, i.worldPosition.xz / _DunesScale));
                 duneNormalTS = lerp(float3(0, 0, 1), duneNormalTS, _DunesStrength);
