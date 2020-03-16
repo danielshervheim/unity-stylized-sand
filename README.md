@@ -8,7 +8,7 @@
 
 ## To Install
 
-Download the [.unitypackage](https://drive.google.com/open?id=1Lc6xgKN8GqlIeGeB0WAsAycON4rkA2Eg), or clone this repository.
+Download the [.unitypackage](https://github.com/danielshervheim/Stylized-Sand/releases/download/v2.0/stylized_sand_2.0.unitypackage), or clone this repository.
 
 ## To Use
 
